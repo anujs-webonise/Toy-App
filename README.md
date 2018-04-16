@@ -23,7 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
 
 Demo of ruby application to get a overview of ROR
 

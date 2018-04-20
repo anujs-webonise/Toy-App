@@ -37,7 +37,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'therubyracer'
-
 gem 'bootstrap-sass', '3.3.7'
 gem 'rails-controller-testing'
 

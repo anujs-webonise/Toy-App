@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   # root 'users#index'
 
   resources :microposts
-  resources :users
 
   root 'static_pages#home'
   # get 'static_pages#home'

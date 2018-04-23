@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'therubyracer'
 gem 'bootstrap-sass', '3.3.7'
 gem 'rails-controller-testing'
+gem 'bcrypt', '3.1.11'
 
 group :production do
   gem 'pg', '0.20.0'

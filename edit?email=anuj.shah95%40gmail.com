@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anuj Shah | Ruby on Rails Tutorial Sample App</title>
+    <title>Anuj Shah | Mini Twitter App</title>
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="1AhyGg71uxtVXomG/Hns/TZUoL7RZtOQ7NF9IGKEgPEsKppl8hQHiMXY9QXggVLUaS+goMaHaIaFeJFDqPejZA==" />
 <link rel="stylesheet" media="all" href="/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
@@ -33,7 +33,7 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <a id="logo" href="/">sample app</a>
+    <a id="logo" href="/">Mini Twitter App</a>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
@@ -74,8 +74,7 @@
 
       <footer class="footer">
   <small>
-    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    The <a href="http://www.railstutorial.org/">Mini Twitter App</a>
   </small>
   <nav>
     <ul>

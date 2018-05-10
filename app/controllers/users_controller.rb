@@ -35,7 +35,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
 
-    if @user.update_attributes(user_params)
+    if @user.update_attributes(edit_user_params)
       flash[:success] = "Profile updated"
       redirect_to @user
     else
@@ -47,8 +47,6 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:success] = "User Deleted"
     redirect_to users_url
-    # log_out
-    # redirect_to root_url
   end
 
   def following
@@ -68,6 +66,10 @@ class UsersController < ApplicationController
   private 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+
+  def edit_user_params
+    params.require(:user).permit(:name, :password, :password_confirmation)
   end
 
   # Confirms admin user

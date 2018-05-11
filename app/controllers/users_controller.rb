@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(user_params(:create))
     if @user.save
       @user.send_activation_email
       flash[:info] = "Please check your email to activate your account."
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
 
-    if @user.update_attributes(edit_user_params)
+    if @user.update_attributes(user_params(:update))
       flash[:success] = "Profile updated"
       redirect_to @user
     else
@@ -64,12 +64,12 @@ class UsersController < ApplicationController
   end
 
   private 
-  def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
-  end
-
-  def edit_user_params
-    params.require(:user).permit(:name, :password, :password_confirmation)
+  def user_params(source)
+    email = nil
+    if source == :create
+      email = :email
+    end
+    params.require(:user).permit(:name, email, :password, :password_confirmation)
   end
 
   # Confirms admin user

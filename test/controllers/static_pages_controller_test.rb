@@ -3,7 +3,7 @@ require 'test_helper'
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
 	def setup
-		@base_title = "Mini Twitter App"
+		@base_title = APP_NAME
 	end
 
   test "should get home" do

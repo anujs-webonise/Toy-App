@@ -2,8 +2,8 @@ require 'test_helper'
 
 class ApplicationHelperTest < ActionView::TestCase
   test "full title helper" do
-    assert_equal full_title, "Mini Twitter App"
-    assert_equal full_title("Help"), "Help | Mini Twitter App"
+    assert_equal full_title, APP_NAME
+    assert_equal full_title("Help"), "Help | #{APP_NAME}"
   end
 end
 

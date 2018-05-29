@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anuj Shah | Mini Twitter App</title>
+    <title>Anuj Shah | <%= APP_NAME %></title>
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="1AhyGg71uxtVXomG/Hns/TZUoL7RZtOQ7NF9IGKEgPEsKppl8hQHiMXY9QXggVLUaS+goMaHaIaFeJFDqPejZA==" />
 <link rel="stylesheet" media="all" href="/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
@@ -33,7 +33,7 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <a id="logo" href="/">Mini Twitter App</a>
+    <a id="logo" href="/"><%= APP_NAME %></a>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
@@ -74,7 +74,7 @@
 
       <footer class="footer">
   <small>
-    The <a href="http://www.railstutorial.org/">Mini Twitter App</a>
+    The <a href="http://www.railstutorial.org/"><%= APP_NAME %></a>
   </small>
   <nav>
     <ul>

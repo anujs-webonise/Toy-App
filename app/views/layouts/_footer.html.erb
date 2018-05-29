@@ -1,12 +1,54 @@
-<footer class="footer">
-  <small>
-    The <a href="#">Mini Twiiter App</a>
-  </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
-</footer>
+<!-- footer -->
+<footer class="py-sm-5">
+    <div class="container">
+        <div class="row py-5">
+            <!-- footer grid1 -->
+            <div class="col-lg-4 text-center">
+                <h2>
+                    <a class="text-white" href="index.html">
+                        <span><%= APP_NAME %></span>
+                    </a>
+                </h2>
+                <p class="mt-4">Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci.
+                    Nulla accumsan ac elit in congue.</p>
+            </div>
+            <!-- //footer gri12 -->
+            <!-- footer grid2 -->
+            <div class="col-lg-4  footv3-left text-center my-lg-0 my-5">
+                <h3 class="mb-3">Get In Touch</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
 
+                <div class="fv3-contact mt-3">
+                    <address>
+                        <span class="fas fa-home mr-2"></span>
+                        <p>Webonise Labs Pvt. Ltd.</p>
+                    </address>
+                </div>
+                <div class="fv3-contact">
+                    <span class="fas fa-envelope-open mr-2"></span>
+                    <p>
+                        <a href="mailto:anuj.shah@weboniselab.com">anuj.shah@weboniselab.com</a>
+                    </p>
+                </div>
+            </div>
+            <!-- //footer grid2 -->
+            <!-- footer grid3 -->
+            <div class="col-lg-4  footv3-left text-center">
+                <h3 class="mb-3">Navigation</h3>
+                <ul class="list-agileits">
+                    <li><%= link_to "Home", root_path %></li>
+                    <li><%= link_to "About", about_path %></li>
+                    <li><%= link_to "Contact", contact_path %></li>
+                    <li><%= link_to "Help", help_path %></li>
+                </ul>
+            </div>
+            <!-- //footer grid3 -->
+        </div>
+        <!-- //footer row -->
+        <div class="cpy-right text-center pb-sm-0 pb-5">
+            <p>©<%= Time.current.year %> <a href="http://webonise.com"> Webonise.</a> All rights reserved</p>
+        </div>
+    </div>
+    <!-- //footer container -->
+</footer>
+<!-- //footer -->

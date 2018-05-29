@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :update, :edit]
   resources :microposts, only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
+  get '*path', to: 'static_pages#404'
 end
 
 

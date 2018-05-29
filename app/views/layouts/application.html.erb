@@ -8,13 +8,15 @@
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
+      <div class="clearfix">&nbsp;&nbsp;</div>
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
       <%= yield %>
-      <%= debug(params) if Rails.env.development? %>
-      <%= render 'layouts/footer' %>
+      <div class="clearfix">&nbsp;&nbsp;</div>
     </div>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
 

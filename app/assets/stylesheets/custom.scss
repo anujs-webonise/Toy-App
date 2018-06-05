@@ -283,7 +283,7 @@ body a:focus {
   height: 32px;
   border: none;
   text-indent: 100%;
-  background: url(../assets/move-top.png) no-repeat 0px 0px;
+  background-image: image-url("move-top.png");
 }
 
 #toTopHover {
@@ -366,7 +366,7 @@ header h1 a span {
 /* banner */
 
 .banner {
-  background: url(../assets/banner.jpg) center no-repeat;
+  background-image: image-url("banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -377,7 +377,7 @@ header h1 a span {
 }
 
 .inner-banner {
-  background: url(../assets/bg.jpg)no-repeat;
+  background-image: image-url("bg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -501,16 +501,16 @@ header h1 a span {
   text-decoration: none;
   height: 34px;
   width: 34px;
-  background: url("../assets/left.png") no-repeat 0px 0px;
+  background-image: image-url("left.png");
 }
 .callbacks_nav.prev {
   left: auto;
-  background: url("../assets/back.png") no-repeat 0px 0px;
+  background-image: image-url("back.png");
   left: 18em;
 }
 .callbacks_nav.next {
   left: auto;
-  background: url("../assets/next.png") no-repeat 0px 0px;
+  background-image: image-url("next.png");
   right: 18em;
 }
 .callbacks_nav:active {
@@ -761,28 +761,6 @@ p.sub-para {
 
 /* //end fixed social */
 
-/* login and register modal */
-
-.modal-content {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background: url(../assets/banner3.jpg) no-repeat center #fff;
-  background-size: cover;
-  border: 10px solid #3c82bd;
-  border-radius: 0.3rem;
-  outline: 0;
-  color: #fff;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 .form-control {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
@@ -807,23 +785,6 @@ p.sub-para {
   font-size: 13px;
   letter-spacing: 1px;
 }
-
-.modal-header {
-  background: #3c82bd;
-  color: #fff;
-  border: none;
-}
-
-.modal-body {
-  position: relative;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.46);
-}
-
-/* //modal */
 
 /* about */
 
@@ -1063,12 +1024,6 @@ span.w3-line {
 
 /* slide */
 
-.slide {
-  background: url(../assets/slide.jpg) no-repeat center;
-  background-size: cover;
-  min-height: 500px;
-}
-
 .slide-right {
   background: #007bff;
 }
@@ -1081,7 +1036,7 @@ span.w3-line {
 }
 
 .slide-sub {
-  background: url(../assets/about.png) no-repeat center;
+  background-image: image-url("about.png");
   background-size: cover;
   min-height: 300px;
 }
@@ -1380,11 +1335,6 @@ p.c-txt {
 
 .address p a:hover {
   color: #000;
-}
-
-.wthree-form-left {
-  background: url(../assets/contact.jpg) no-repeat center;
-  background-size: cover;
 }
 
 .contact-top1 .form-group input,

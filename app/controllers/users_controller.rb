@@ -8,13 +8,18 @@ class UsersController < ApplicationController
   end
 
   def new
+    redirect_to root_url if logged_in?
     @user = User.new
   end
 
   def show
-    @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(page: params[:page])
-    redirect_to root_url and return unless @user.activated?
+    begin
+      @user = User.find(params[:id])
+      @microposts = @user.microposts.paginate(page: params[:page])
+      redirect_to root_url and return unless @user.activated?
+    rescue ActiveRecord::RecordNotFound => e
+      render "static_pages/404"
+    end
   end
 
   def create

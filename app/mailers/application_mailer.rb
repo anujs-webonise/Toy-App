@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'noreply@mini-twitter-app-rails.com'
+  default from: EMAIL_FROM
   layout 'mailer'
 end

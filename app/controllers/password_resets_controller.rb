@@ -4,6 +4,7 @@ class PasswordResetsController < ApplicationController
 	before_action :check_expiration, only: [:edit, :update]    # Case (1)
 
   def new
+    redirect_to root_url if logged_in?
   end
 
   def create

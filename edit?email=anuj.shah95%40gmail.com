@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anuj Shah | <%= APP_NAME %></title>
+    <title><%= AUTHOUR_NAME %> | <%= APP_NAME %></title>
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="1AhyGg71uxtVXomG/Hns/TZUoL7RZtOQ7NF9IGKEgPEsKppl8hQHiMXY9QXggVLUaS+goMaHaIaFeJFDqPejZA==" />
 <link rel="stylesheet" media="all" href="/assets/account_activations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
@@ -64,8 +64,8 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <img alt="Anuj Shah" class="gravatar" src="https://secure.gravatar.com/avatar/af272e0b02565ea59602fca78ea4078a?s=80" />
-        Anuj Shah
+        <img alt="<%= AUTHOUR_NAME %>" class="gravatar" src="https://secure.gravatar.com/avatar/af272e0b02565ea59602fca78ea4078a?s=80" />
+        <%= AUTHOUR_NAME %>
       </h1>
     </section>
   </aside>

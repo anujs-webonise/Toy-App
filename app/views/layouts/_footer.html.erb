@@ -21,13 +21,13 @@
                 <div class="fv3-contact mt-3">
                     <address>
                         <span class="fas fa-home mr-2"></span>
-                        <p>Webonise Labs Pvt. Ltd.</p>
+                        <p><%= COMPANY_NAME %></p>
                     </address>
                 </div>
                 <div class="fv3-contact">
                     <span class="fas fa-envelope-open mr-2"></span>
                     <p>
-                        <a href="mailto:anuj.shah@weboniselab.com">anuj.shah@weboniselab.com</a>
+                        <a href="mailto:<%= AUTHOUR_EMAIl %>"><%= AUTHOUR_EMAIl %></a>
                     </p>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         </div>
         <!-- //footer row -->
         <div class="cpy-right text-center pb-sm-0 pb-5">
-            <p>©<%= Time.current.year %> <a href="http://webonise.com"> Webonise.</a> All rights reserved</p>
+            <p>©<%= Time.current.year %> <a href="<%= COMPANY_WEBSITE %>"> <%= COMPANY_NAME %></a> All rights reserved</p>
         </div>
     </div>
     <!-- //footer container -->
